@@ -19,6 +19,6 @@ from urllib import request
 from core.views import*
 
 urlpatterns = [
-    path('userlist',ListUser.as_view()),  
-    path('usercreate',CreateUser.as_view()),
+    path('user',UserListView.as_view()),
+    path('user/<int:pk>/',UserDetailView.as_view()),  
 ]

@@ -79,8 +79,12 @@ WSGI_APPLICATION = 'nomadesocial.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'mydatabase'
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres75',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
