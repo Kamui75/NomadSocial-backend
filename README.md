@@ -1,10 +1,5 @@
 # NomadSocial-backend
 
-installation de postgresSQL :
-
-lien pour l'installer sous Mac : https://postgresapp.com/documentation/install.html 
-Notez bien le mot de passe que vous uiliserez lors de l'installation
-
 installation du projet:
 
 installer python (j'ai la version 3.10, je ne sais pas si ca marchera avec toutes les version, à voir)
@@ -18,6 +13,7 @@ Pour installer toutes le bibliothéques essentiels executez la commande : pip in
 Ensuite executez les commandes :
 
 python manage.py makemigrations
+
 python manage.py migrate
 
 Ces commandes sont à executer à chaque fois qu'il y a des modifications dans le projet qui pourraient affecter la base de données
