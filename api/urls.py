@@ -19,10 +19,6 @@ from urllib import request
 from core.views import*
 
 urlpatterns = [
-    path('userlist',ListUser.as_view()),
+    path('userlist',ListUser.as_view()),  
     path('usercreate',CreateUser.as_view()),
-    path('Companylist',ListCompanyAccount.as_view()),
-    path('Companycreate',CreateCompanyAccount.as_view()),
-    
-
 ]

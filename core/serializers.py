@@ -1,14 +1,14 @@
 from rest_framework import serializers
-from .models import CompanyAccount, UserAccount
+from .models import  UserAccount
 
 
 class UserAccountSerialize(serializers.ModelSerializer):
     class Meta:
         model = UserAccount
-        fields = ['id','firstname', 'name', 'email', 'password']
+        fields = ['id','first_name', 'last_name', 'email', 'password','password2']
 
 
 class CompanyAccountSerialize(serializers.ModelSerializer):
     class Meta:
-        model = CompanyAccount
-        fields = ['id','company_name', 'contact_email', 'password']
+        model = UserAccount
+        fields = ['id','first_name','last_name','company_name', 'email', 'password', 'password2']

@@ -18,8 +18,5 @@ from django.urls import path
 from .views import *
 
 urlpatterns = [
-    path('api/userlist',ListUser.as_view()),
-    path('api/usercreate',CreateUser.as_view()),
     
-
 ]
